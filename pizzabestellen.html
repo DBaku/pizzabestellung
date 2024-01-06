@@ -7,5 +7,38 @@
         <link rel="stylesheet" href="./CSS/style.css" />
         <script type="module" src="./Js/logik.js" defer></script>
     </head>
-    <body></body>
+    <body>
+        <div class="pizza-card" onclick="addToCart('pizza-salame')">
+            <img src="pizza-salame.jpg" alt="Pizza Salame" />
+            <h3>Pizza Salame</h3>
+            <p>Preis: 9,00€</p>
+            <label for="choice">Auswahl</label>
+            <input aria-label="choice" type="checkbox" name="Auswahl" id="Auswahl" />
+        </div>
+
+        <div class="pizza-card" onclick="addToCart('pizza-funghi')">
+            <img src="pizza-funghi.jpg" alt="Pizza Funghi" />
+            <h3>Pizza Funghi</h3>
+            <p>Preis: 9,00€</p>
+            <label for="choice">Auswahl</label>
+            <input aria-label="choice" type="checkbox" name="Auswahl" id="Auswahl" />
+        </div>
+
+        <div class="pizza-card" onclick="addToCart('pizza-margherita')">
+            <img src="pizza-margherita.jpg" alt="Pizza Margherita" />
+            <h3>Pizza Margherita</h3>
+            <p>Preis: 7,00€</p>
+            <label for="choice">Auswahl</label>
+            <input aria-label="choice" type="checkbox" name="Auswahl" id="Auswahl" />
+        </div>
+
+        <div class="pizza-card" onclick="addToCart('pizza-spinaci')">
+            <img src="pizza-spinaci.jpg" alt="Pizza Spinaci" />
+            <h3>Pizza Spinaci</h3>
+            <p>Preis: 9,00€</p>
+            <label for="choice">Auswahl</label>
+            <input aria-label="choice" type="checkbox" name="Auswahl" id="Auswahl" />
+        </div>
+        <div class="total-price" id="total-price">Gesamtpreis: 0,00€</div>
+    </body>
 </html>
