@@ -6,6 +6,7 @@
         <title>Pizza Bestellung</title>
         <link rel="stylesheet" href="./CSS/style.css" />
         <script type="module" src="./Js/logik.js" defer></script>
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
     </head>
     <body>
         <header>
@@ -26,41 +27,44 @@
             </header-wrapper>
         </header>
         <main>
-            <div class="pizza-card" onclick="addToCart('pizza-salame')">
-                <img src="./Assets/IMG/pizza-1344720_1280.jpg" alt="Pizza Salame" />
-                <h3>Pizza Salame</h3>
-                <p>Preis: 9,00€</p>
-                <label for="choice">Auswahl</label>
-                <input aria-label="choice" type="checkbox" name="Auswahl" id="Salame" /> <br />
-                <button type="button" onclick="addToCart('pizza-salame')">take</button>
-            </div>
+            <order-wrapper>
+                <div class="pizza-card" onclick="addToCart('pizza-salame')">
+                    <img src="./Assets/IMG/pizza-1344720_1280.jpg" alt="Pizza Salame" />
+                    <h3>Pizza Salame</h3>
+                    <p>Preis: 9,00€</p>
+                    <label for="choice">Auswahl</label>
+                    <input aria-label="choice" type="checkbox" name="Auswahl" id="Salame" /> <br />
+                    <button type="button" onclick="addToCart('pizza-salame')">take</button>
+                </div>
 
-            <div class="pizza-card" onclick="addToCart('pizza-funghi')">
-                <img src="./Assets/IMG/pizza-397942_1280.jpg" alt="Pizza Funghi" />
-                <h3>Pizza Funghi</h3>
-                <p>Preis: 9,00€</p>
-                <label for="choice">Auswahl</label>
-                <input aria-label="choice" type="checkbox" name="Auswahl" id="Funghi" /> <br />
-                <button type="button" onclick="addToCart('pizza-funghi')">take</button>
-            </div>
+                <div class="pizza-card" onclick="addToCart('pizza-funghi')">
+                    <img src="./Assets/IMG/pizza-397942_1280.jpg" alt="Pizza Funghi" />
+                    <h3>Pizza Funghi</h3>
+                    <p>Preis: 9,00€</p>
+                    <label for="choice">Auswahl</label>
+                    <input aria-label="choice" type="checkbox" name="Auswahl" id="Funghi" /> <br />
+                    <button type="button" onclick="addToCart('pizza-funghi')">take</button>
+                </div>
 
-            <div class="pizza-card" onclick="addToCart('pizza-margherita')">
-                <img src="./Assets/IMG/margherita-pizza.webp" alt="Pizza Margherita" />
-                <h3>Pizza Margherita</h3>
-                <p>Preis: 7,00€</p>
-                <label for="choice">Auswahl</label>
-                <input aria-label="choice" type="checkbox" name="Auswahl" id="Margherita" /> <br />
-                <button type="button" onclick="addToCart('pizza-margherita')">take</button>
-            </div>
+                <div class="pizza-card" onclick="addToCart('pizza-margherita')">
+                    <img src="./Assets/IMG/margherita-pizza.webp" alt="Pizza Margherita" />
+                    <h3>Pizza Margherita</h3>
+                    <p>Preis: 7,00€</p>
+                    <label for="choice">Auswahl</label>
+                    <input aria-label="choice" type="checkbox" name="Auswahl" id="Margherita" />
+                    <br />
+                    <button type="button" onclick="addToCart('pizza-margherita')">take</button>
+                </div>
 
-            <div class="pizza-card" onclick="addToCart('pizza-spinaci')">
-                <img src="./Assets/IMG/pizza-spinat.jpg" alt="Pizza Spinaci" />
-                <h3>Pizza Spinaci</h3>
-                <p>Preis: 9,00€</p>
-                <label for="choice">Auswahl</label>
-                <input aria-label="choice" type="checkbox" name="Auswahl" id="Spinaci" /> <br />
-                <button type="button" onclick="addToCart('pizza-spinaci')">take</button>
-            </div>
+                <div class="pizza-card" onclick="addToCart('pizza-spinaci')">
+                    <img src="./Assets/IMG/pizza-spinat.jpg" alt="Pizza Spinaci" />
+                    <h3>Pizza Spinaci</h3>
+                    <p>Preis: 9,00€</p>
+                    <label for="choice">Auswahl</label>
+                    <input aria-label="choice" type="checkbox" name="Auswahl" id="Spinaci" /> <br />
+                    <button type="button" onclick="addToCart('pizza-spinaci')">take</button>
+                </div>
+            </order-wrapper>
             <br />
             <button type="submit">bestellen</button>
 
