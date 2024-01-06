@@ -1,12 +1,12 @@
-let cart = [1];
 function addToCart(pizza) {
+    const cart = [];
     cart.push(pizza);
     updateTotalPrice();
 }
 function updateTotalPrice() {
     let total = 0;
 
-    switch (cart[cart.length - 1]) {
+    switch (cart[cart.length + 1]) {
         case "pizza-salame":
             total += 9;
             break;
@@ -23,5 +23,5 @@ function updateTotalPrice() {
             break;
     }
 
-    document.getElementById("total-price").innerHTML = "Gesamtpreis: " + total.toFixed(2) + "€";
+    document.getElementById("total-price").innerHTML = "Gesamtpreis: " + total.toFixed() + "€";
 }
